@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+    ----- FONTS Import ----- 
+*/
+
+/* ROBOTO 400 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Alfa Slab One 400 */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+/* 
+    ----- Slider style from librairie 'react-alice-carousel' -----
+*/
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+/* 
+    ----- GENERAL ----
+*/
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    @apply text-secondary;
+}
+
+p {
+    @apply mb-4;
+}
+
+.animate {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+.titleSecondaryShadow {
+    text-shadow: 0.2rem 0.2rem rgb(255, 255, 255, 50%);
+}
+.clickAndCollectShadow {
+    text-shadow: 0.1rem 0.1rem rgba(255, 0, 0, 0.3);
+}

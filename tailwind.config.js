@@ -144,6 +144,7 @@ module.exports = {
             inherit: colors.inherit,
             current: colors.current,
             transparent: colors.transparent,
+
             black: colors.black,
             white: colors.white,
             slate: colors.slate,
@@ -151,7 +152,7 @@ module.exports = {
             zinc: colors.zinc,
             neutral: colors.neutral,
             stone: colors.stone,
-            red: colors.red,
+
             orange: colors.orange,
             amber: colors.amber,
             yellow: colors.yellow,
@@ -168,6 +169,13 @@ module.exports = {
             fuchsia: colors.fuchsia,
             pink: colors.pink,
             rose: colors.rose,
+            //my colors
+            primary: "#ffc045",
+            "primary-hover": "#f5b029",
+            secondary: "#3d2514",
+            "secondary-hover": "#231105",
+            red: "#bf2222",
+            "red-hover": "#990e0e",
         }),
         columns: {
             auto: "auto",
@@ -316,6 +324,7 @@ module.exports = {
             DEFAULT: "1",
         },
         fontFamily: {
+            secondary: ['"Alfa Slab One"'],
             sans: [
                 "ui-sans-serif",
                 "system-ui",
@@ -1010,5 +1019,5 @@ module.exports = {
             50: "50",
         },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/forms")],
 };
