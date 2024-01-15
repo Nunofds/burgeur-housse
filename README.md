@@ -1,6 +1,3 @@
-# Burger House
+# Burger House - Fast food project created with React.js and Tailwind
 
-## Fast food project created with React.js and Tailwind
-
-### This project is a study case.
-
+## This project is a study case.
